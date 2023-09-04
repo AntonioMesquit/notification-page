@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+body{
+    background-color: #F7FAFD;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card{
+    margin-top: 1rem;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 3.5rem;
+    max-width: 80rem;
+}
+header{
+display: flex;
+justify-content: space-between;
+margin-bottom: 4rem;
+}
+.logo{
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+.logo h1:nth-child(1){
+    color:  hsl(219, 14%, 63%);
+}
+.logo h1:nth-child(2){
+    background-color: #0A317B;
+    padding: 0.3rem 0.6rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 0.6em;
+    color: white;
+    
+}
+.mark{
+    cursor: pointer;
+}
+.ft{
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1rem;
+}
+.box{
+    display: flex;
+align-items: center;
+margin-bottom: 1rem;
+padding-block: 2rem;
+padding-left: 2rem;
+cursor: pointer;
+border-radius: 1rem;
+    
+}
+.left{
+    color: #939DAE;
+    font-weight: 700;
+}
+p{
+    color: #939DAE;
+}
+
+.nome{
+    color: #000;
+    font-weight: 700;
+    margin-right: .3rem;
+}
+.nome:hover{
+    color: #0A317B;
+    font-weight: 700;
+}
+.x{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    
+}
+.z{
+    display: flex;
+    flex-direction: column;
+}
+.links{
+    color: #0A317B;
+font-weight: 700;
+}
+.box.active{
+    background-color: #E5EFFA;
+}
+.text-hiden{
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.box.active .text-hiden{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 5rem;
+    width: 90%;
+    border-radius: 2rem;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+}
+.text-box2{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.xs{
+    width: 5rem;
+    height: 5rem;
+}
+.text-box p{
+font-size: 1.8rem;
+}
+@media screen and (max-width: 600px){
+    .box.active .text-hiden p {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .box.active .text-hiden{
+        height: 150px;
+    }
+}
