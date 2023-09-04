@@ -119,15 +119,26 @@ font-weight: 700;
 .text-box2{
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 .xs{
     width: 5rem;
     height: 5rem;
 }
 .text-box p{
-font-size: 1.8rem;
+font-size: 1.5rem;
 }
+
+.box.active .pe:after{
+    content: "";
+    margin-left: 0.5em;
+    background-color: red;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 600px){
     .box.active .text-hiden p {
         font-size: 1.2rem;
